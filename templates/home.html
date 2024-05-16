@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>CV_SHOW</title>
+    <style>
+        #container{
+            background-color: rgb(128, 128, 128);
+            border-color: rgb(142, 142, 143);
+            border-width: 10px;
+            border-style: outset;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+        
+        .c_container{
+            margin-right: 40px;
+            margin-left: 40px;
+            display: flex;
+            height: 800px;
+            border-color: rgb(143, 143, 143);
+            border-width: 10px;
+            border-style: solid;
+            color:rgb(44, 53, 50);
+            padding-left: 10px;
+        }
+        .c_container p{
+            padding-left: 20px;
+           
+        }
+        .perInfo{
+            flex: 1;
+            width: 50%;
+            word-wrap: break-word;
+        }
+        .expInfo{
+            flex: 1;
+            width: 50%;
+            word-wrap: break-word;      
+        }
+ 
+        
+        body{
+            background-color : rgb(158, 157, 157);
+        }
+        #header_info{
+            text-align: center;
+             color:rgb(166, 167, 166); 
+             font-size:35px;
+        }
+    </style>
+   
+</head>
+<body>
+    
+    <head>
+        <div id="container">
+
+
+            <h1 id="header_info">OnlineCV</h1>
+        </div>
+        <br>
+        <div class="c_container">
+            <div class="perInfo">
+                <h3>personal Info:</h3>
+                <br><br>
+                <p><strong>name: </strong> {{data.name}}</p>
+                <br>
+                <p><strong>email: </strong>{{data.email}}</p>
+                <br>
+                <p><strong>phone: </strong>{{data.phone}}</p>
+                <br>
+                <p><strong>summary: </strong>{{data.summary}}</p>
+                
+            </div>
+            <div class="expInfo">
+               
+                <h3>exprience Info:</h3>
+                <br><br>
+                <p><strong>skills: </strong>{{data.skills}}</p>
+                  <br><br><br><br><br>
+                <p><strong>education: </strong>{{data.education}}</p>
+            </div>
+            <div class="rightside">
+            </div>
+            
+        </div>
+    
+    </head>
+
+</body>
+</html>
